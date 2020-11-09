@@ -24,12 +24,12 @@ ___
 ### Secure Razor Page
 ___
 * 其實就是 Register Razor Page 時, 作揖些配置
-```c#
-services.AddRazorPages(options => {
-    options.Conventions.AuthorizePage("/Razor/Secure");                 //　Auth 配置
-    options.Conventions.AuthorizePage("/Razor/Secure", "Technology.2"); //　Auth 配置
-    options.Conventions.AuthorizeFolder("/SecureRazor/");               //　Auth 配置
-    options.Conventions.AllowAnonymousToPage("/SecureRazor/Anon");      //　Auth 配置
-});
-```
+    ```c#
+    services.AddRazorPages(options => {
+        options.Conventions.AuthorizePage("/Razor/Secure");                 //　Auth 配置
+        options.Conventions.AuthorizePage("/Razor/Secure", "Technology.2"); //　Auth 配置
+        options.Conventions.AuthorizeFolder("/SecureRazor/");               //　Auth 配置
+        options.Conventions.AllowAnonymousToPage("/SecureRazor/Anon");      //　Auth 配置
+    });
+    ```
 
